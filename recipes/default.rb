@@ -22,4 +22,8 @@ when 'mac_os_x'
   include_recipe 'hipchat_client::_mac_os_x'
 when 'windows'
   include_recipe 'hipchat_client::_windows'
+when 'rhel'
+  include_recipe 'hipchat_client::_linux'
+when 'debian'
+  include_recipe 'hipchat_client::_linux'
 end
