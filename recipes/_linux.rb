@@ -3,8 +3,8 @@
 # Recipe:: linux
 #
 
-def add_apt_source
-
+case node['platform_family']
+when 'debian'
   apt_repository node['hipchat']['repo_name'] do
     action     :add
     components ['stable', 'main']
@@ -12,11 +12,7 @@ def add_apt_source
     repo_name  "#{node['hipchat']['repo_name']}.list"
     uri        node['hipchat']['uri']
   end
-
-end
-
-def add_yum_repo
-
+when 'rhel'
   yum_repository node['hipchat']['repo_name'] do
     action      :create
     baseurl     node['hipchat']['baseurl']
@@ -25,16 +21,8 @@ def add_yum_repo
     gpgcheck    true
     gpgkey      node['hipchat']['key']
   end
-
-end
-
-case node['platform_family']
-when 'debian'
-  add_apt_source
-when 'rhel'
-  add_yum_repo
 end
 
 package 'hipchat' do
-    action :install
+  action :install
 end
