@@ -3,7 +3,7 @@
 # Attributes:: default
 #
 
-if node['os'].eql?('linux')
+if node['os'] == 'linux'
   default['hipchat']['baseurl']      = 'http://downloads.hipchat.com/linux/yum'
   default['hipchat']['description']  = 'Atlassian Hipchat'
   default['hipchat']['key']          = 'https://www.hipchat.com/keys/hipchat-linux.key'
