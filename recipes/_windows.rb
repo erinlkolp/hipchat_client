@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: hipchat_client
-# Recipe:: mac_os_x
+# Recipe:: windows
 #
 # Copyright 2013, Urbandecoder Labs
 #
