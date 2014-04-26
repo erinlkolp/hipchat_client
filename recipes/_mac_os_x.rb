@@ -17,13 +17,13 @@
 # limitations under the License.
 #
 
-remote_file "#{Chef::Config[:file_cache_path]}/HipChat-2.4.zip" do
-  source 'https://downloads.hipchat.com.s3.amazonaws.com/osx/HipChat-2.4.zip'
-  checksum '93391567ecbf6982e1a6092fd9ac1b32ae1af5a6aa7eabd05555cfb31e438d9e'
+remote_file "#{Chef::Config[:file_cache_path]}/HipChat-2.5.zip" do
+  source 'https://downloads.hipchat.com.s3.amazonaws.com/osx/HipChat-2.5.zip'
+  checksum '528340a6c5107cc4a071dc74714612d5390192149094f9ea607a6bbd32d135e5'
   notifies :run, 'execute[unzip-hipchat]'
 end
 
 execute 'unzip-hipchat' do
-  command "unzip #{Chef::Config[:file_cache_path]}/HipChat-2.4.zip -d /Applications"
+  command "unzip #{Chef::Config[:file_cache_path]}/HipChat-2.5.zip -d /Applications"
   action :nothing
 end
