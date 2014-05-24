@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-windows_package 'HipChat' do
-  source 'http://downloads.hipchat.com/windows/HipChat-2.1.982-win32.msi'
+package 'HipChat' do
+  source 'http://downloads.hipchat.com/windows/HipChat-2.2.1107-win32.msi'
   action :install
 end

@@ -10,6 +10,5 @@ version          '1.1.4'
   supports os
 end
 
-depends 'windows'
 depends 'apt', '>= 2.2.1'
 depends 'yum', '>= 3.1.2'
