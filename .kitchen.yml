@@ -4,9 +4,10 @@ driver:
 
 provisioner:
   name: chef_solo
-  require_chef_omnibus: 12.13.37
+  require_chef_omnibus: 12.21.20
 
 platforms:
+  - name: geerlingguy/centos7
   - name: fso/artful64-desktop
   - name: fso/xenial64-desktop
   - name: fso/zesty64-desktop
@@ -14,7 +15,7 @@ platforms:
   - name: jhcook/osx-elcapitan-10.11
 
 suites:
-  - name: linux_support
+  - name: hc
     run_list:
       - recipe[hipchat_client::default]
     attributes:
