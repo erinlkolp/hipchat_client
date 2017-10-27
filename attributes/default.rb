@@ -3,6 +3,13 @@
 # Attributes:: default
 #
 
+## deb
+# deb https://atlassian.artifactoryonline.com/atlassian/hipchat-apt-client
+# key: https://atlassian.artifactoryonline.com/atlassian/api/gpg/key/public
+## yum
+# https://atlassian.artifactoryonline.com/atlassian/hipchat-yum-client/
+#
+
 if node['os'] == 'linux'
   default['hipchat']['baseurl']      = 'http://downloads.hipchat.com/linux/yum'
   default['hipchat']['description']  = 'Atlassian Hipchat'
