@@ -40,7 +40,7 @@ License and Authors
 -------------------
 
 * Author: Erin L. Kolp (<ekolp@kickbackpoints.com>)
-* Copyright: 2013-2014 Julian C. Dunn.
+* Copyright: 2013-2017 Julian C. Dunn.
 
 ```text
 Licensed under the Apache License, Version 2.0 (the "License");
