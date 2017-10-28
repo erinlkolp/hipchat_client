@@ -4,7 +4,7 @@ maintainer_email 'ekolp@kickbackpoints.com'
 license          'Apache 2.0'
 description      'Installs Atlassian HipChat client'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '1.2.0'
+version          '1.2.1'
 
 %w{mac_os_x windows debian ubuntu centos rhel}.each do |os|
   supports os
