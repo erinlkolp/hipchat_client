@@ -3,7 +3,7 @@ CHANGELOG
 
 This file is used to list changes made in each version of the hipchat_client cookbook.
 
-1.2.1
+1.3.0
 -----
 - Update installation source URLs
 
