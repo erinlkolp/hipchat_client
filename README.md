@@ -39,7 +39,7 @@ To-Do
 License and Authors
 -------------------
 
-* Author: Julian C. Dunn (<jdunn@aquezada.com>)
+* Author: Erin L. Kolp (<ekolp@kickbackpoints.com>)
 * Copyright: 2013-2014 Julian C. Dunn.
 
 ```text
