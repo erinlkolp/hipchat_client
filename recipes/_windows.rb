@@ -17,7 +17,8 @@
 # limitations under the License.
 #
 
-package 'HipChat' do
-  source 'http://downloads.hipchat.com/windows/HipChat-2.2.1107-win32.msi'
+windows_package 'HipChat' do
+  source 'https://atlassian.jfrog.io/atlassian/libqt-hipchat/HipChat-4.30.1.1663-win32.msi'
+  checksum '7ad43cd85dcbb68a9fde1a1fd1216d2318ad1bfef580ebf631894edbba89407e'
   action :install
 end

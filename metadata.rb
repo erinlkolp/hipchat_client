@@ -1,10 +1,10 @@
 name             'hipchat_client'
-maintainer       'Urbandecoder Labs'
-maintainer_email 'jdunn@aquezada.com'
+maintainer       'Erin Kolp'
+maintainer_email 'ekolp@kickbackpoints.com'
 license          'Apache 2.0'
 description      'Installs Atlassian HipChat client'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '1.1.4'
+version          '1.2.0'
 
 %w{mac_os_x windows debian ubuntu centos rhel}.each do |os|
   supports os
